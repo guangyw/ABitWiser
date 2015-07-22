@@ -8,12 +8,14 @@
 (function(bwf) {
     bwf.directive('bwFramework', function() {
         return {
-            transclude: false,
+            transclude: true,
             scope: {
-
+                title: '@',
+                subtitle: '@',
+                iconFile: '@'
             },
             controller: 'bwFrameworkController',
-            templateUrl: 'bwFramework/bwFrameworkTemplate.html'
+            templateUrl: 'ext-modules/bwFramework/bwFrameworkTemplate.html'
         }
     })
 }(angular.module('bwFramework')));

@@ -1,0 +1,55 @@
+.bw-menu-area {
+    position: relative;
+    background: #333333;
+    color: #CCCCCC;
+    padding-left: 0;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.bw-menu-area ul {
+    padding-left: 0px;
+}
+
+.bw-menu-area .btn:hover {
+    color: #999977;
+}
+
+.bw-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.bw-menu ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.bw-menu li {
+    line-height: 3em;
+    cursor: pointer
+}
+
+.bw-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.bw-selectable-item:hover {
+    background-color: #555500;
+}
+
+.bw-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ps-menu-icon {
+    margin-right: 10px;
+}

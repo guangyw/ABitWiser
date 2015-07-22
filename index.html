@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A BitWiser</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="app/app.css">
+  <link rel="stylesheet" href="ext-modules/bwFramework/bwFramework.css">
+  <link rel="stylesheet" href="ext-modules/bwMenu/bwMenu.css">
+
+</head>
+<body class="container-fluid">
+  <bw-framework title="A BitWiser"
+          subtitle="Organize your web bits by bits"
+          icon-file="https://avatars1.githubusercontent.com/u/1613039?v=3&s=140">
+    <bw-menu>
+      <bw-menu-item label="Dashboard" icon="fa-tachometer"></bw-menu-item>
+      <bw-menu-item label="Locations" icon="fa-location-arrow"></bw-menu-item>
+      <bw-menu-item label="Guides" icon="fa-user"></bw-menu-item>
+    </bw-menu>
+
+  </bw-framework>
+
+
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <!--<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="ext-modules/bwFramework/bwFrameworkModule.js"></script>
+  <script src="ext-modules/bwFramework/bwFrameworkDirective.js"></script>
+  <script src="ext-modules/bwFramework/bwFrameworkController.js"></script>
+  <script src="ext-modules/bwMenu/bwMenuModule.js"></script>
+  <script src="ext-modules/bwMenu/bwMenuController.js"></script>
+  <script src="ext-modules/bwMenu/bwMenuDirective.js"></script>
+  <script src="ext-modules/bwMenu/bwMenuItem.js"></script>
+
+
+  <script src="ext-modules/bwDashboard/bwDashboardModule.js"></script>
+  <!--<script src="components/version/version.js"></script>-->
+  <!--<script src="components/version/version-directive.js"></script>-->
+  <!--<script src="components/version/interpolate-filter.js"></script>-->
+</body>
+</html>
