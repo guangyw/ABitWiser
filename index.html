@@ -7,16 +7,20 @@
   <title>A BitWiser</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
-  <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css" />
 
-  <link rel="stylesheet" href="app/app.css">
-  <link rel="stylesheet" href="ext-modules/bwFramework/bwFramework.css">
-  <link rel="stylesheet" href="ext-modules/bwMenu/bwMenu.css">
-  <link rel="stylesheet" href="ext-modules/bwDashboard/bwDashboard.css">
+  <link rel="stylesheet" href="app/app.css" />
+  <link rel="stylesheet" href="ext-modules/bwFramework/bwFramework.css" />
+  <link rel="stylesheet" href="ext-modules/bwMenu/bwMenu.css" />
+  <link rel="stylesheet" href="ext-modules/bwDashboard/bwDashboard.css" />
 
+  <!-- widget css -->
+  <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+  <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+  <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
 
 </head>
 <body class="container-fluid">
@@ -71,6 +75,14 @@
 
   <script src="ext-modules/bwDashboard/bwDashboardModule.js"></script>
   <script src="ext-modules/bwDashboard/bwDashboardDirective.js"></script>
+
+  <script src="ext-modules/bwDashboard/bwWidgetBodyDirective.js"></script>
+
+  <!-- widget JavaScript files -->
+  <script src="app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+  <script src="app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+  <script src="app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
+
 
   <!--<script src="components/version/version.js"></script>-->
   <!--<script src="components/version/version-directive.js"></script>-->
