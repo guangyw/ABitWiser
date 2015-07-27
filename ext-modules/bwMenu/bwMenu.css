@@ -50,6 +50,13 @@
     user-select: none;
 }
 
-.ps-menu-icon {
+.bw-menu-icon {
     margin-right: 10px;
+}
+
+.bw-menu-active-indicator {
+    float: right;
+    color: #DDDDDD;
+    margin-right: 0;
+    margin-top: 8px;
 }
