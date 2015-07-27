@@ -23,16 +23,26 @@
       <bw-menu-item label="Dashboard" icon="fa-tachometer" route="dashboard"></bw-menu-item>
       <bw-menu-item label="Locations" icon="fa-location-arrow" route="locations"></bw-menu-item>
       <bw-menu-item label="Guides" icon="fa-user" route="guides"></bw-menu-item>
+      <bw-menu-group label="Equipment" icon="fa-gears">
+        <bw-menu-item label="Rafts" icon="fa-unlink" route="rafts"></bw-menu-item>
+        <bw-menu-item label="Paddles" icon="fa-magic" route="paddles"></bw-menu-item>
+        <bw-menu-item label="Life Vests" icon="fa-life-ring" route="vests"></bw-menu-item>
+        <!--<bw-menu-group label="Equipment" icon="fa-gears">-->
+          <!--<bw-menu-item label="Rafts2" icon="fa-unlink" route="rafts"></bw-menu-item>-->
+          <!--<bw-menu-item label="Paddles2" icon="fa-magic" route="paddles"></bw-menu-item>-->
+          <!--<bw-menu-item label="Life Vests2" icon="fa-life-ring" route="vests"></bw-menu-item>-->
+        <!--</bw-menu-group>-->
+      </bw-menu-group>
     </bw-menu>
 
   </bw-framework>
 
 
-
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <!--<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
   <script src="app/app.js"></script>
   <script src="ext-modules/bwFramework/bwFrameworkModule.js"></script>
   <script src="ext-modules/bwFramework/bwFrameworkDirective.js"></script>
@@ -41,6 +51,8 @@
   <script src="ext-modules/bwMenu/bwMenuController.js"></script>
   <script src="ext-modules/bwMenu/bwMenuDirective.js"></script>
   <script src="ext-modules/bwMenu/bwMenuItem.js"></script>
+  <script src="ext-modules/bwMenu/bwMenuGroup.js"></script>
+
 
 
   <script src="ext-modules/bwDashboard/bwDashboardModule.js"></script>

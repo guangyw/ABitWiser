@@ -7,6 +7,7 @@
     bwf.controller('bwFrameworkController', ['$scope', '$window', '$timeout', '$rootScope', function($scope, $window, $timeout, $rootScope) {
         $scope.isMenuButtonVisible = true;
         $scope.isMenuVisible = true;
+        $scope.isMenuVertical = true;
 
         $($window).on('resize.bwFramework', function() {
             $scope.$apply(function() {
@@ -27,6 +28,12 @@
         $scope.$on('bw-menu-item-selected-event', function(evt, data) {
             $scope.routeString = data.route;
         });
+
+        $scope.$on('bw-menu-orientation-changed-event', function(evt, data) {
+            $scope.isMenuVertical = data.isMenuVertical;
+        });
+
+
         
         $scope.menuButtonClicked = function () {
             $scope.isMenuVisible = !$scope.isMenuVisible;
