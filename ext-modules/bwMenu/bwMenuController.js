@@ -8,6 +8,8 @@
     bwMenu.controller('bwMenuController', ['$scope', '$rootScope', function($scope, $rootScope) {
         $scope.showMenu = true;
         $scope.isVertical = true;
+        $scope.showMenu = true;
+        $scope.allowHorizontalToggle = true;
         this.setActiveElement = function(el) {
             $scope.activeElement = el;
         };
@@ -30,6 +32,8 @@
 
         $scope.$on('bw-menu-show', function(evt, data) {
             $scope.showMenu = data.show;
+            $scope.allowHorizontalToggle = data.allowHorizontalToggle;
+            //$scope.isVertical = data.isVertical;
         });
 
         $scope.toggleMenuOrientation = function() {
@@ -54,4 +58,4 @@
         });
     }]);
 
-}(angular.module('bwMenu')))
+}(angular.module('bwMenu')));

@@ -5,7 +5,7 @@
 
 
 (function(bwMenu) {
-    bwMenu.directive('bwMenu', function() {
+    bwMenu.directive('bwMenu', ['$timeout', function($timeout) {
         return {
             scope: {
             },
@@ -14,8 +14,11 @@
             templateUrl: 'ext-modules/bwMenu/bwMenuTemplate.html',
             controller: 'bwMenuController',
             link: function(scope, el, attr) {
-
+                var item = el.find('.bw-selectable-item:first');
+                $timeout(function() {
+                    item.trigger('click');
+                });
             }
         }
-    });
+    }]);
 }(angular.module('bwMenu')));

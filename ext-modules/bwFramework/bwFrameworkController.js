@@ -12,6 +12,7 @@
         $($window).on('resize.bwFramework', function() {
             $scope.$apply(function() {
                 checkWidth();
+                broadcastMenuState();
             });
         });
 
@@ -27,6 +28,9 @@
 
         $scope.$on('bw-menu-item-selected-event', function(evt, data) {
             $scope.routeString = data.route;
+
+            checkWidth();
+            broadcastMenuState();
         });
 
         $scope.$on('bw-menu-orientation-changed-event', function(evt, data) {
@@ -43,7 +47,9 @@
 
         var broadcastMenuState = function() {
             $rootScope.$broadcast('bw-menu-show',  {
-                show: $scope.isMenuVisible
+                show: $scope.isMenuVisible,
+                allowHorizontalToggle: !$scope.isMenuButtonVisible
+                //isVertical: $scope.isMenuVertical
             });
         };
 
