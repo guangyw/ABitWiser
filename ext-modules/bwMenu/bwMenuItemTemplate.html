@@ -1,7 +1,7 @@
-<li class="bw-selectable-item" ng-class="{'bw-item-horizontal': !isVertical()}">
+<li class="bw-selectable-item" ng-class="{'bw-item-horizontal': !isMenuVertical()}">
     <div class="bw-noselect">
         <i class="fa {{icon}} ps-menu-icon"></i>
         {{label}}
     </div>
-    <i ng-if="isActive() && isVertical()" class="fa fa-2x fa-caret-left bw-menu-active-indicator"></i>
+    <i ng-if="isActive() && isMenuVertical()" class="fa fa-2x fa-caret-left bw-menu-active-indicator"></i>
 </li>

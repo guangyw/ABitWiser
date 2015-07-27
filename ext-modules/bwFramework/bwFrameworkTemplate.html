@@ -15,9 +15,6 @@
             </div>
 
         </div>
-
-
-
         <div class="bw-right-side-controls col-sm-6">
             <div>
                 <button class="btn btn-primary">Button 1</button>
@@ -31,6 +28,5 @@
 
 <div ng-transclude></div>
 
-<div style="position: absolute; left:220px; top:200px; color: red; font-size: 44px;">
-    {{routeString}}
+<div ng-view class="bw-view" ng-class="{'bw-view-full-width': !isMenuVertical || !isMenuVisible}">
 </div>

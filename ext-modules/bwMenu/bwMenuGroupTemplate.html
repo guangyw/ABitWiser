@@ -1,4 +1,4 @@
-<li class="bw-selectable-item" ng-click="clicked()" ng-class="{'bw-item-horizontal': !isVertical()}">
+<li class="bw-selectable-item" ng-click="clicked()" ng-class="{'bw-item-horizontal': !isMenuVertical()}">
     <div class="bw-noselect">
         <i class="fa {{icon}} ps-menu-icon"></i>
         {{label}}
@@ -6,7 +6,7 @@
     </div>
 </li>
 
-<div ng-show="isOpen" class="bw-subitem-section" ng-class="{'bw-popup-menu': !isVertical()}">
+<div ng-show="isOpen" class="bw-subitem-section bw-fade-in-animation" ng-class="{'bw-popup-menu': !isMenuVertical()}">
     <ul ng-transclude >
 
     </ul>

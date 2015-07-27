@@ -22,7 +22,7 @@
             return $scope.activeElement;
         };
 
-        this.isVertical = function() {
+        this.isMenuVertical = function() {
             return $scope.isVertical;
         };
 
@@ -33,7 +33,7 @@
         $scope.$on('bw-menu-show', function(evt, data) {
             $scope.showMenu = data.show;
             $scope.allowHorizontalToggle = data.allowHorizontalToggle;
-            //$scope.isVertical = data.isVertical;
+            $scope.isVertical = data.isVertical;
         });
 
         $scope.toggleMenuOrientation = function() {

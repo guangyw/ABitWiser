@@ -1,4 +1,4 @@
-angular.module('app').config(function ($provide) {
+angular.module('myApp').config(function ($provide) {
     $provide.decorator('$exceptionHandler', ['$delegate', function($delegate) {
         return function (exception, cause){
             $delegate(exception, cause);

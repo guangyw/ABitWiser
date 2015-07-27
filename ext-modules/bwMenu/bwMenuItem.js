@@ -21,8 +21,8 @@
                     return el === ctrl.getActiveElement();
                 };
 
-                scope.isVertical = function() {
-                    return ctrl.isVertical() || el.parents('.bw-subitem-section').length > 0;
+                scope.isMenuVertical = function() {
+                    return ctrl.isMenuVertical() || el.parents('.bw-subitem-section').length > 0;
                 };
 
                 el.on('click', function (evt) {

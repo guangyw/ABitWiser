@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('bwMenu', []);
+angular.module('bwMenu', ["ngAnimate"]);

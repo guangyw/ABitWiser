@@ -10,9 +10,13 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css">
+
   <link rel="stylesheet" href="app/app.css">
   <link rel="stylesheet" href="ext-modules/bwFramework/bwFramework.css">
   <link rel="stylesheet" href="ext-modules/bwMenu/bwMenu.css">
+  <link rel="stylesheet" href="ext-modules/bwDashboard/bwDashboard.css">
+
 
 </head>
 <body class="container-fluid">
@@ -40,10 +44,20 @@
 
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-gridster/src/angular-gridster.js"></script>
+
   <!--<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
 
   <script src="app/app.js"></script>
+  <script src="app/appConfig.js"></script>
+  <script src="app/appRouteConfig.js"></script>
+  <script src="app/directives/abwDirectives.js"></script>
+
+  <script src="app/services/dataService.js"></script>
+
+
   <script src="ext-modules/bwFramework/bwFrameworkModule.js"></script>
   <script src="ext-modules/bwFramework/bwFrameworkDirective.js"></script>
   <script src="ext-modules/bwFramework/bwFrameworkController.js"></script>
@@ -56,6 +70,8 @@
 
 
   <script src="ext-modules/bwDashboard/bwDashboardModule.js"></script>
+  <script src="ext-modules/bwDashboard/bwDashboardDirective.js"></script>
+
   <!--<script src="components/version/version.js"></script>-->
   <!--<script src="components/version/version-directive.js"></script>-->
   <!--<script src="components/version/interpolate-filter.js"></script>-->

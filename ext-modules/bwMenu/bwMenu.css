@@ -6,6 +6,7 @@
 }
 
 .bw-menu-area-vertical {
+    float: left;
     width: 200px;
     min-height: 100vh;
     padding-top: 30px;
@@ -108,4 +109,16 @@
     background-color: #333333;
     width: 200px;
     padding-left: 0;
+}
+
+.bw-fade-in-animation {
+    -webkit-transition: linear all 0.5s;
+    -moz-transition: linear all 0.5s;
+    -ms-transition: linear all 0.5s;
+    -o-transition: linear all 0.5s;
+    transition: linear all 0.5s;
+}
+
+.bw-fade-in-animation.ng-hide {
+    opacity: 0;
 }
